@@ -1,0 +1,13 @@
+version: '3'
+
+
+tasks:
+  run_stack:
+    cmds:
+      - docker compose -f docker/docker-compose.yml -p taskingai up -d
+    desc: Run the docker compose stack
+
+  stop_stack:
+    cmds:
+      - docker compose -f docker/docker-compose.yml -p taskingai down
+    desc: Stop the docker compose stack

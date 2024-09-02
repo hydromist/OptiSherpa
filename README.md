@@ -104,5 +104,15 @@ docker-compose -p taskingai pull
 docker-compose -p taskingai --env-file .env up -d
 ```
 
+An esier way to start the full stack is to use Task,
+```bash
+task run_stack 
+```
+
+To stop the stack, use
+```bash
+task stop_stack
+```
+
 Don't worry about data loss; your data will be automatically migrated to the latest version schema if needed.
 
